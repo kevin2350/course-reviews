@@ -1,0 +1,53 @@
+<script>
+    submitForms = function() {
+        document.getElementById("select").submit();
+    }
+</script>
+<div class="row">
+	<div id="right-header">
+		<h3>Find a review</h3>
+	</div>
+</div>
+<div class="row">
+    <div class="column">
+        <form id="select" action="" method="GET">
+            Semester: <select id="semester" name="semester">
+                    <optgroup label="Select semester">
+                        <option value="all">All</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                    </optgroup>
+            </select>
+            Year: <input id="year" type="number" name="year" value="">	
+            Professor: <input id="professor" type="string" name="professor" value="">	
+        </form>
+    </div>
+    <div class="column">
+        <input type="button" value="Submit" onclick="submitForms()">
+    </div>
+</div>
+<div class="row">
+    <div id="reviews">
+        <table>
+            <tr id="table-header">
+                <td class="table-category">Course Number</td>
+                <td class="table-category">Course Name</td>
+                <td class="table-category">Semester</td>
+                <td class="table-category">Year</td>
+                <td class="table-category">Professor</td>
+                <td class="table-category">Review</td>
+            </tr>
+            {{#each reviews as |r|}}
+            <tr>
+                <td>{{r.courseNumber}}</td>
+                <td>{{r.courseName}}</td>
+                <td>{{r.semester}}</td>
+                <td>{{r.year}}</td>
+                <td>{{r.professor}}</td>
+                <td>{{r.review}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

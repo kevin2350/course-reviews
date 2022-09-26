@@ -1,0 +1,57 @@
+<script>
+    submitForms = function() {
+        document.getElementById("newEntry").submit();
+    }
+</script>
+<div class="row">
+	<div id="right-header">
+		<h3>Add a review</h3>
+	</div>
+</div>
+<form id="newEntry" action="" method="POST">
+    <div class="row">
+        <div class="entry">
+            Course Number: <input type="string" name="courseNumber" value="">	
+        </div>
+    </div>
+    <div class="row">
+        <div class="entry">
+            Course Name: <input type="string" name="courseName" value="">	
+        </div>
+    </div>
+    <div class="row">
+        <div class="entry">
+            Semester: <select id="semester" name="semester">
+                <optgroup label="Select semester">
+                    <option value="Fall">Fall</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                </optgroup>
+            </select>	
+        </div>
+    </div>
+    <div class="row">
+        <div class="entry">
+            Year: <input type="number" name="year" value="">	
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            Professor: <input type="string" name="professor" value="">	
+        </div>
+    </div>
+    <div class="row">
+        <div class="entry">
+            <p id="reviewForm">
+                <label for="textarea">Review: </label>
+                <textarea id="textarea" name="review" placeholder="Enter your text message..."></textarea>
+            </p>	
+        </div>
+    </div>
+</form>
+<div class="row">
+    <input class="entry" type="button" value="Submit" onclick="submitForms()">
+</div>
+<div class="row">
+    {{invalid}}
+</div>

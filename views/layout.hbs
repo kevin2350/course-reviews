@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+		<title>AITY-THREE ISSA B</title>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+<div id="container">
+	<header>
+			<h1 id="title">MY <span id="ait">COURSE </span>REVIEWS</h1>
+			<h2 id="subTitle">An anonymous course review site.</h2>
+	</header>
+
+	<div class='row'>
+    	<div class='column'>
+      		<div id='left'>
+        		<nav>
+					<ul>
+						<li><a href="/">All reviews</a></li>
+						<li><a href="/reviews/mine">My reviews</a></li>
+						<li><a href="/reviews/add">Add review!</a></li>
+					</ul>
+					<div id="about-session">Your session's total page visits: {{ visits }} </div>
+				</nav>
+			</div>
+    	</div>
+    	<div class='column'>
+      		<div id='right'>
+					<div id="reviews">
+						{{{ body }}}
+					</div>
+      		</div>
+    	</div>
+  	</div>
+
+</div>
+</body>
+</html>

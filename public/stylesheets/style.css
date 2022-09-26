@@ -1,0 +1,137 @@
+body {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	background-color: #eeddff;
+}
+
+
+/* header stuff */
+header {
+	text-align: center;
+	background-color: rgb(202, 149, 255);
+	color: rgb(255, 228, 254);
+	margin-bottom: 3vh;
+	margin-top: 2vh;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	margin: 0;
+	padding-top: 5vh;
+	font-size: 8vh;
+}
+
+#subTitle {
+	margin: 0;
+	font-size: 3vh;
+	padding-bottom: 4vh;
+}
+
+#ait {
+	color: rgb(112, 26, 197);
+}
+
+/* body stuff */
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+  
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 0 0 auto;
+	word-wrap: break-word;
+	overflow-y: auto;
+	background-color: rgb(225, 195, 255);
+}
+
+/* leftside navbar */
+#left {
+	height: 100%;
+	background-color: rgb(202, 149, 255);
+	max-height: 70vh;
+	min-height: 70vh;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 3vh;
+}
+
+li {
+	padding-bottom: 3vh;
+}
+
+nav {
+	text-align: center;
+	padding-top: 3vh;
+}
+
+#about-session {
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+/* home page rightside reviews */
+#right {
+	background-color: rgb(225, 195, 255);
+	padding-left: 10vh;
+	padding-right: 10vh;
+	max-height: 70vh;
+	min-height: 70vh;
+}
+
+#right-header {
+	font-size: 2vh;
+}
+
+#semester, #year, #professor {
+	margin-right: 2vh;
+}
+
+#reviews {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 10px;
+}
+tr:nth-child(even) {
+	background: #CCC
+}
+
+tr:nth-child(odd) {
+	background: #FFF
+}
+
+.table-category {
+	font-weight: bold;
+	background-color:rgb(190, 125, 255);
+}
+
+/* add a review page */
+.entry {
+	margin-bottom: 1vh;
+}
+
+#reviewForm * {
+	vertical-align: middle;
+}
+
+textarea {
+	min-width: 30vh;
+}
